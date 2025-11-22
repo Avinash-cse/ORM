@@ -26,8 +26,9 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
-~~
+~~~
 models.py
+
 from django.db import models 
 from django.contrib import admin
 class amazon_DB (models.Model):
@@ -40,10 +41,12 @@ class amazon_DBAdmin(admin.ModelAdmin):
      list_display=["Product_name","S_no","Product_type","Price","Year"]
 
 admin.py
+
      from django.contrib import admin
 from .models import amazon_DB,amazon_DBAdmin
 admin.site.register(amazon_DB,amazon_DBAdmin)
-~~
+
+~~~
 ## OUTPUT
 ![alt text](<Screenshot 2025-11-22 111855.png>)
 ![alt text](<Screenshot 2025-11-22 111932.png>)
